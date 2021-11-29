@@ -1,5 +1,9 @@
+body{
+  background-color: #708090;
+}
 h1{
-  font-size: 50;
+  background-color: #908070;
+  font-size: 500;
 }
 #coname {
   color: #F58F7C;
