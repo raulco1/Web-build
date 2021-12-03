@@ -1,13 +1,50 @@
-body{
-  background-color: #708090;
-}
-h1{
-  background-color: #908070;
-  font-size: 500;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+
+
+#header h1{
+
+  font-family: "Roboto Slab";
 }
 #coname {
+  font-style: bold;
   color: #F58F7C;
 }
 #lname{
   color: #99B3FF;
+}
+/* change nav to class */
+/* difference between nav and id */
+.nav{
+  background-color: #908070;
+  text-align: center;
+  padding: 40px;
+
+}
+.nav a{
+  color: white;
+  width:auto;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 40px;
+}
+.nav a:hover{
+  background-color: #709090;
+  color: white;
+}
+
+.nav a.active{
+  background-color: #707090;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+body{
+  /*background-color: #708090;*/
 }
