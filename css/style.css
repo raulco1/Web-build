@@ -1,50 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Sla');
 
-
-#header h1{
-
-  font-family: "Roboto Slab";
+body{
+  background-color: #708090;
+  margin: 0;
 }
+.nav{
+  /*background-image: url(valleyTest.jpg);*/
+  background-color: #908070;
+  display: block;
+  padding: 10px;
+  border: 1px solid orange;
+}
+#name{
+  position: relative;
+  margin: 0px;
+  font-family: "Roboto Slab";
+  display:inline-flex;
+  /* font-size: 0px; */
+  border: 1px solid red;
+  /* padding: 0px; */
+  /* font-size: 12px; */
+  float: right;
+
+}
+#navbar{
+  border: 1px solid green;
+  padding: 10px
+  position:relative;
+}
+/* .nav a{
+  border: 1px solid green;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+} */
+
+
+
 #coname {
+  font-size: 20px;
   font-style: bold;
   color: #F58F7C;
 }
 #lname{
+  font-size: 20px;
   color: #99B3FF;
 }
-/* change nav to class */
-/* difference between nav and id */
-.nav{
-  background-color: #908070;
-  text-align: right;
-  padding: 40px;
 
-}
-.nav a{
-  color: white;
-  width:auto;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 40px;
-}
+/*
+
 .nav a:hover{
   background-color: #709090;
   color: white;
 }
-
 .nav a.active{
   background-color: #707090;
   color: white;
-}
-
-
-
-
-
-
-
-
-
-body{
-  /*background-color: #708090;*/
-}
+} */
