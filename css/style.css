@@ -1,54 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Sla');
 
 body{
+  /* background-image: url(valleyTest.jpg); */
   background-color: #708090;
   margin: 0;
 }
 .nav{
-  /*background-image: url(valleyTest.jpg);*/
+  position:relative;
+  overflow: hidden;
   background-color: #908070;
-  display: block;
-  padding: 10px;
-  border: 1px solid orange;
+  /* border: 1px solid blue; */
+  font-size: 25px;
 }
 #name{
-  position: relative;
-  margin: 0px;
   font-family: "Roboto Slab";
-  display:inline-flex;
-  /* font-size: 0px; */
-  border: 1px solid red;
-  /* padding: 0px; */
-  /* font-size: 12px; */
-  float: right;
+  /* border: 1px solid red; */
+  float: left;
+  font-size: 40px;
+  padding: 1px 10px;
 
 }
-#navbar{
-  border: 1px solid green;
-  padding: 10px
-  position:relative;
-}
-/* .nav a{
-  border: 1px solid green;
-  color: white;
-  padding: 10px;
-  font-size: 12px;
-} */
-
-
-
 #coname {
-  font-size: 20px;
   font-style: bold;
   color: #F58F7C;
 }
 #lname{
-  font-size: 20px;
-  color: #99B3FF;
+  /* color: #99B3FF; */
+  color: #033F63;
 }
-
-/*
-
+#menu{
+  color: #033F63;
+  /* border: 1px solid yellow; */
+  padding-right: 15px;
+  float: right;
+}
+.navbar{
+  color: red;
+  float: nones;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  /* border: 1px solid green; */
+}
+.nav a{
+  color: Honeydew;
+  text-decoration: none;
+  padding: 10px;
+  /* border: 1px solid pink; */
+}
 .nav a:hover{
   background-color: #709090;
   color: white;
@@ -56,4 +56,4 @@ body{
 .nav a.active{
   background-color: #707090;
   color: white;
-} */
+}
