@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Sla');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
 
 body{
-  /* background-image: url(valleyTest.jpg); */
-  background-color: #708090;
+  background: url(psBlueSky-vincent-gerbouin.jpg) no-repeat center center fixed;
+  background-size:cover;
   margin: 0;
 }
 .nav{
