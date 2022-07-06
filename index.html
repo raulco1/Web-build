@@ -6,34 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="./javascript/index.js"></script>
   <title>Web Builder</title>
 </head>
 
 <body>
 
-    <div class="nav">
+  <div class="nav">
 
-      <div id="name">
-        <span id="coname">Raul Co</span><span id=lname>rrea</span>
-      </div>
-
-      <div class = "navbar">
-        <a class="active" href="">Casa</a>
-        <a href="">About Me</a>
-        <a href="">Projects</a>
-        <a href="">Cooking</a>
-        <a href="">Contact</a>
-      </div>
-
-      <a id="menu" href="">
-        <span>Menu</span>
-      </a>
-
+    <div id="name">
+      <span id="coname">Raul Co</span><span id=lname>rrea</span>
     </div>
 
+    <div class="navbar">
+      <a class="active" href="">Casa</a>
+      <a href="">About Me</a>
+      <a href="">Projects</a>
+      <a href="">Cooking</a>
+      <a href="">Contact</a>
+    </div>
 
+    <a id="menu" href="">
+      <span>Menu</span>
+    </a>
 
-  <!-- < <div class="Casa">
+  </div>
+
+  <div id="quine">
+    <script>
+      document.getElementById("quine").innerHTML = document.documentElement.innerHTML.replace(/\&/g, "&amp;").replace(/\</g, "&lt;").replace(/\>/g, "&gt;");
+    </script>
+  </div>
+
+  <!-- <div class="Casa">
     <figure>
       <img src="css/valleyTest.jpg" alt="Mountains in the Coechella valley">
       <figcaption>
@@ -46,23 +51,23 @@
     Mostly <i>Self taught</i> coder with an intrest in all things data and backend.
 
     <strong>My Moto:</strong>
-    <em>Learn until something breaks</em> -->
+    <em>Learn until something breaks</em>
+  </div> -->
 
 
 
-
-    <!--Show icons of programing langueges
+  <!--Show icons of programing langueges
      perhaps table showing level -->
 
 
-<!--
+  <!--
   </div>
   <div class="programing_projects">
     tile design
   </div> -->
 
 
-<!--
+  <!--
   <hr>
   <address>
     <p><a href="mailto:racorrea@ucsd.edu">racorrea@ucsd.edu</a></p>
