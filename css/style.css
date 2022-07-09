@@ -4,78 +4,79 @@ body{
   background: url(psBlueSky-vincent-gerbouin.jpg) no-repeat center center fixed;
   background-size:cover;
   margin: 0;
-  position: relative;
+  /* position: relative; */
 }
 .nav{
   position:relative;
   overflow: hidden;
   background-color: #908070;
   /* border: 1px solid blue; */
-  font-size: 25px;
+  /* font-size: 110%; */
 }
 #name{
   font-family: "Roboto Slab";
-  /* border: 1px solid red; */
   float: left;
-  font-size: 40px;
-  padding: 1px 10px;
-
+  font-size: 1.8em;
+  padding: 0rem 0.5rem;
+  /* border: 1px solid red; */
 }
 #coname {
-  font-style: bold;
   color: #F58F7C;
 }
 #lname{
-  /* color: #99B3FF; */
-  color: #033F63;
+  color: #99B3FF;
 }
 #menu{
   color: #033F63;
-  /* border: 1px solid yellow; */
-  padding-right: 15px;
+  padding-right: 0.7rem;
   float: right;
+  font-size: 1em
+  /* border: 1px solid yellow; */
+}
+#menu:hover{
+  color: #E2EFDE;
 }
 .navbar{
-  color: red;
-  float: nones;
+  display: inline-flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-40%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1em;
   /* border: 1px solid green; */
 }
 .nav a{
-  color: Honeydew;
+  color: #707090;
   text-decoration: none;
-  padding: 8px;
+  padding: 0.78rem 0.4rem;
   /* border: 1px solid pink; */
 }
 .nav a:hover{
   background-color: #709090;
-  color: white;
+  color: #E2EFDE;
 }
 .nav a.active{
   background-color: #707090;
   color: white;
 }
-
 #quine{
   position: relative;
   display: inline-block;
   white-space: pre;
-  width: 100%;
-  font-size: .6em;
+  /* width: 200%; */
+  font-size: 35%;
   /* border: 1px red solid; */
   color: black;
 }
 
 #Casa{
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   width: 70%;
-  height: 30%;
-  font-size: 40px;
+  height: 40%;
+  font-size: 200
+  %;
   transform: translate(-50%, -50%);
   color: white;
   /* background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74,#1f3344 ); */
@@ -83,9 +84,9 @@ body{
   border: 5px pink solid;
 }
 #Casa p{
-  margin: 0;
-  padding: 20px;
-  font-size: 30px;
+  margin: 0
+  padding: 1px 1px;
+  font-size: 25px;
 }
 #Casa div{
   text-align: center;
