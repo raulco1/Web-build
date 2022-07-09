@@ -60,33 +60,40 @@ body{
   color: white;
 }
 #quine{
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  display: flex;
   white-space: pre;
-  /* width: 200%; */
-  font-size: 35%;
-  /* border: 1px red solid; */
-  color: black;
-}
+  font-size: 1em;
+  /* color: black; */
+  /* opacity: 20%; */
+  width: 30%;
+  /* background: linear-gradient(to right, rgba(255, 255, 0, 0.5);, rgba(255, 0, 0, 0.5);); */
+  background: linear-gradient(90deg, black, transparent);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 
+
+
+  /* border: 1px red solid; */
+}
 #Casa{
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
-  width: 70%;
-  height: 40%;
-  font-size: 200
-  %;
   transform: translate(-50%, -50%);
+  width: 75%;
+  height: 60%;
+  font-size: 200%;
   color: white;
-  /* background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74,#1f3344 ); */
-  background-image: linear-gradient(to top right, #519cbb,#3e7594,#3b5e74);
+  background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74);
   border: 5px pink solid;
 }
 #Casa p{
-  margin: 0
-  padding: 1px 1px;
-  font-size: 25px;
+  display: inherit;
+  margin: 0;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  /* 1.3em */
 }
 #Casa div{
   text-align: center;
