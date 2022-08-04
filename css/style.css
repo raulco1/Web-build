@@ -1,22 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
-
-body{
-  background: url(psBlueSky-vincent-gerbouin.jpg) no-repeat center center fixed;
-  background-size:cover;
+*{
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body{
+  /* background: url(psBlueSky-vincent-gerbouin.jpg) no-repeat center center fixed; */
+  background-image: url(psBlueSky-vincent-gerbouin.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   /* position: relative; */
 }
-.nav{
-  position:relative;
+.container{
+  /* width: 100%;
+  min-height: 100vh;
+  padding-left: 2%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden; */
+  /* position:relative; */
   overflow: hidden;
   background-color: #908070;
   /* border: 1px solid blue; */
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* margin: 0em 10rem; */
 }
 #name{
   font-family: "Roboto Slab";
   float: left;
   font-size: 1.8em;
-  padding: 0rem 0.5rem;
+  padding-left: 1.25rem;
+  /* padding: 0rem 0.5rem;
+  margin: 30px 0; */
   /* border: 1px solid red; */
 }
 #coname {
@@ -29,11 +50,19 @@ body{
   color: #033F63;
   padding-right: 0.7rem;
   float: right;
-  font-size: 1em
+  font-size: 1em;
   /* border: 1px solid yellow; */
+  display:none;
 }
 #menu:hover{
   color: #E2EFDE;
+}
+/*
+.nav{
+  position:relative;
+  overflow: hidden;
+  background-color: #908070;
+  border: 1px solid blue;
 }
 .navbar{
   display: inline-flex;
@@ -42,13 +71,13 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1em;
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 .nav a{
   color: #707090;
   text-decoration: none;
   padding: 0.78rem 0.4rem;
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
 }
 .nav a:hover{
   background-color: #709090;
@@ -57,7 +86,38 @@ body{
 .nav a.active{
   background-color: #707090;
   color: white;
+} */
+
+
+nav{
+  flex: 1;
+  text-align: right;
+  font-size: 1.5em;
+
+
 }
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  /* color: #fff; */
+  color: #707090;
+  font-size: 1em;
+}
+nav ul li a:hover{
+  background-color: #709090;
+  color: #E2EFDE;
+}
+nav ul li a.active{
+  background-color: #707090;
+  color: white;
+}
+
+
+
 #quine{
   position: fixed;
   display: flex;
@@ -69,6 +129,14 @@ body{
 	-webkit-text-fill-color: transparent;
   /* border: 1px red solid; */
 }
+
+
+
+
+
+
+
+
 #Casa{
   position: absolute;
   top: 54%;
