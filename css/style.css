@@ -11,34 +11,21 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* position: relative; */
+  /* position: fixed; */
 }
 .container{
-  /* width: 100%;
-  min-height: 100vh;
-  padding-left: 2%;
-  padding-right: 8%;
-  box-sizing: border-box;
-  overflow: hidden; */
-  /* position:relative; */
-  overflow: hidden;
   background-color: #908070;
-  /* border: 1px solid blue; */
+  font-size: 1.75em;
 }
 .navbar{
-  width: 100%;
   display: flex;
-  align-items: center;
-  /* margin: 0em 10rem; */
+  align-items: center;/* flex and center used if want to make nav height bigger while have it center */
+  height: 1.2em; /* dependent on .container font-size */
 }
 #name{
-  font-family: "Roboto Slab";
+  /* font-family: "Roboto Slab"; */
   float: left;
-  font-size: 1.8em;
-  padding-left: 1.25rem;
-  /* padding: 0rem 0.5rem;
-  margin: 30px 0; */
-  /* border: 1px solid red; */
+  padding-left: 0.75rem;
 }
 #coname {
   color: #F58F7C;
@@ -47,65 +34,27 @@ body{
   color: #99B3FF;
 }
 #menu{
-  color: #033F63;
-  padding-right: 0.7rem;
-  float: right;
-  font-size: 1em;
-  /* border: 1px solid yellow; */
   display:none;
 }
-#menu:hover{
-  color: #E2EFDE;
-}
-/*
-.nav{
-  position:relative;
-  overflow: hidden;
-  background-color: #908070;
-  border: 1px solid blue;
-}
-.navbar{
-  display: inline-flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1em;
-  border: 1px solid green;
-}
-.nav a{
-  color: #707090;
-  text-decoration: none;
-  padding: 0.78rem 0.4rem;
-  border: 1px solid pink;
-}
-.nav a:hover{
-  background-color: #709090;
-  color: #E2EFDE;
-}
-.nav a.active{
-  background-color: #707090;
-  color: white;
-} */
-
-
 nav{
-  flex: 1;
-  text-align: right;
-  font-size: 1.5em;
-
-
+  display: flex;
+  justify-content: flex-end;
+  /* height: 100%; */
+  flex-grow: 1;/*flex:1*/
+}
+nav ul{
+  display: flex;
 }
 nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 30px;
+display:flex;
 }
 nav ul li a{
+  display: flex;
+  align-items: center;
+  font-size: 0.65em;
+  padding: 1em;
   text-decoration: none;
-  /* color: #fff; */
   color: #707090;
-  font-size: 1em;
 }
 nav ul li a:hover{
   background-color: #709090;
@@ -114,77 +63,4 @@ nav ul li a:hover{
 nav ul li a.active{
   background-color: #707090;
   color: white;
-}
-
-
-
-#quine{
-  position: fixed;
-  display: flex;
-  white-space: pre;
-  font-size: 1em;
-  width: 30%;
-  background: linear-gradient(90deg, black, transparent);
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  /* border: 1px red solid; */
-}
-
-
-
-
-
-
-
-
-#Casa{
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  height: 60%;
-  font-size: 1.75em;
-  color: white;
-  background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74);
-  border: 0.2em pink solid;
-}
-#Casa p{
-  display: inherit;
-  margin: 0;
-  padding: 1rem 2rem;
-  font-size: 1em;
-  /* 1.3em */
-}
-#Casa div{
-  text-align: center;
-}
-.web-analytics{
-  position: relative;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  justify-content: center;
-  /* background-color: blue; */
-  padding: 1rem 2rem;
-  height: 9rem;
-}
-.web-col{
-  float: left;
-  /* background-color: pink; */
-  /* border: 0.05em black solid; */
-}
-/* Styles for website counter container */
-.website-counter {
-  position: relative;
-  background-color: #908070;
-  /* height: 50px; */
-  color: white;
-  border-radius: 2em;
-  font-weight: 500;
-  font-size: 1.5em;
-  margin-top: 2rem;
-}
-.web-col p{
-  display: inherit;
-  color: honeydew;
 }
