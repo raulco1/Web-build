@@ -64,3 +64,23 @@ nav ul li a.active{
   background-color: #707090;
   color: white;
 }
+#quine{
+  position: fixed;
+  display: flex;
+  line-height: 1.5;
+  /* white-space: pre; */
+  font-size: 2em;
+  /* make work vertical looks cool
+  position: absolute;
+  transform: translateX(-100%) rotate(90deg);
+  transform-origin: right;
+  left: 32%;
+  top: -40%;
+  white-space: pre;
+  font-size: 1.2em;*/
+
+  /* background: linear-gradient(90deg, black, transparent); */
+  /* -webkit-background-clip: text; */
+	/* -webkit-text-fill-color: transparent; */
+  /* border: 1px red solid; */
+}
