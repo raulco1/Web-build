@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -46,7 +48,7 @@ nav ul{
   display: flex;
 }
 nav ul li{
-display:flex;
+  display:flex;
 }
 nav ul li a{
   display: flex;
@@ -80,4 +82,38 @@ nav ul li a.active{
   top: -40%;
   white-space: pre;
   font-size: 1.2em;*/
+}
+#Casa{
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 60%;
+  padding: 1em;
+  /* background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74); */
+  background-color: #324A5F;
+  border: 4px Honeydew solid;
+  box-shadow:
+    15px 15px 0 -4px #324A5F,
+    15px 15px Honeydew;
+}
+#Casa h1{
+  color: Honeydew;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+}
+#Casa p{
+  color: #CCC9DC;
+  padding: 0.5em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2em;
+}
+#Motto{
+  font-size: 1em;
+  text-align: center;
+  color: Honeydew;
+}
+#m2{
+  display: none;
 }
