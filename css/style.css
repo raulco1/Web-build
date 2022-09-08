@@ -35,8 +35,13 @@ body{
 #lname{
   color: #99B3FF;
 }
-#menu{
-  display:none;
+.menu-icon{
+  width: 50px;
+  display: none;
+}
+#menuList{
+  overflow: hidden;
+  transition: 0.5s;
 }
 nav{
   display: flex;
@@ -85,7 +90,7 @@ nav ul li a.active{
 }
 #Casa{
   position: absolute;
-  top: 54%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
@@ -116,4 +121,38 @@ nav ul li a.active{
 }
 #m2{
   display: none;
+}
+@media only screen and (max-width:700px){
+  nav ul{
+    width: 100%;
+    display: grid;
+    /* background: linear-gradient(transparent, #908070); */
+    /* background: #908070; */
+    background: #F58F7C;
+    position: absolute;
+    top: 1.2em;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a{
+    justify-content: center;
+    color: #E2EFDE;
+    font-size: 0.8em;
+    padding: 0.1em;
+  }
+  .menu-icon{
+    display: block;
+    padding-right: 0.75rem;
+    filter: invert(75%) sepia(14%) saturate(4714%) hue-rotate(191deg) brightness(100%) contrast(105%);
+    width: 1.4rem;
+  }
+  #menuList{
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
 }

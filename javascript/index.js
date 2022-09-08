@@ -1,7 +1,72 @@
 // attempt at a quine
 document.getElementById("quine").innerHTML = document.documentElement.innerHTML.replace(/\&/g, "&amp;").replace(/\</g, "&lt;").replace(/\>/g, "&gt;");
-// Make it so it resize text to fit within webpage
 
+//Menu Toggle for media 700px and smaller
+var menuList = document.getElementById("menuList");
+var feedback = document.getElementById("feedback");
+var minWidth = document.body.scrollWidth;
+feedback.innerHTML = minWidth;
+
+
+// var top = document.getElementsByTagName('nav ul');
+const elements = document.getElementsByClassName("menu-icon")[0];
+const cssObj = window.getComputedStyle(elements, null);
+
+let dis = cssObj.getPropertyValue("display");
+// document.getElementById("demo").innerHTML = dis;
+// if(dis == "block"){menuList.style.maxHeight = "0%"}
+
+menuList.style.maxHeight = "0%"
+function togglemenu() {
+    if (menuList.style.maxHeight == "0%")
+    {
+      menuList.style.maxHeight ="100%";
+    }
+    else
+    {
+      menuList.style.maxHeight ="0%";
+    }
+  }
+
+
+
+
+
+// function togglemenu(){
+//   if (minWidth <= 700){
+//     if (menuList.style.maxHeight == "0px")
+//     {
+//       menuList.style.maxHeight ="130px";
+//     }
+//     else
+//     {
+//       menuList.style.maxHeight ="0px";
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // function togglemenu() {
+  //   console.log(menuList.style.maxHeight)
+  //   if (menuList.style.maxWidth => "700px")
+  //   {
+  //     menuList.style.maxHeight ="0%";
+  //   }
+  //   else
+  //   {
+  //     menuList.style.maxHeight ="100%";
+  //   }
+  // }
 
 // //Website Counter
 // var counterContainer = document.querySelector(".website-counter");
@@ -16,16 +81,16 @@ document.getElementById("quine").innerHTML = document.documentElement.innerHTML.
 // counterContainer.innerHTML = visitCount;
 
 
-var counterContainer = document.querySelector(".website-counter");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
+// var counterContainer = document.querySelector(".website-counter");
+// var resetButton = document.querySelector("#reset");
+// var visitCount = localStorage.getItem("page_view");
 
 // Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount;
+// if (visitCount) {
+//   visitCount = Number(visitCount) + 1;
+//   localStorage.setItem("page_view", visitCount);
+// } else {
+//   visitCount = 1;
+//   localStorage.setItem("page_view", 1);
+// }
+// counterContainer.innerHTML = visitCount;
