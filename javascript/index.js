@@ -16,7 +16,7 @@ let dis = cssObj.getPropertyValue("display");
 // document.getElementById("demo").innerHTML = dis;
 // if(dis == "block"){menuList.style.maxHeight = "0%"}
 
-menuList.style.maxHeight = "0%"
+menuList.style.maxHeight = "100%"
 function togglemenu() {
     if (menuList.style.maxHeight == "0%")
     {

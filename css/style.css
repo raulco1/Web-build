@@ -126,9 +126,9 @@ nav ul li a.active{
   nav ul{
     width: 100%;
     display: grid;
-    /* background: linear-gradient(transparent, #908070); */
+    /* background: linear-gradient( #908070, #ACC18A); */
     /* background: #908070; */
-    background: #F58F7C;
+    background: #FAF4D3;
     position: absolute;
     top: 1.2em;
     right: 0;
@@ -140,9 +140,17 @@ nav ul li a.active{
   }
   nav ul li a{
     justify-content: center;
-    color: #E2EFDE;
+    color: #324A5F;
     font-size: 0.8em;
     padding: 0.1em;
+  }
+  nav ul li a:hover{
+    background-color: #99B3FF;
+    color: #E2EFDE;
+  }
+  nav ul li a.active{
+    background-color: #F58F7C;
+    color: white;
   }
   .menu-icon{
     display: block;
@@ -154,5 +162,4 @@ nav ul li a.active{
     overflow: hidden;
     transition: 0.5s;
   }
-
 }
