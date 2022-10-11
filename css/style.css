@@ -113,10 +113,10 @@ nav ul li a.active{
   padding: 1em;
   /* background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74); */
   background-color: #324A5F;
-  border: 4px Honeydew solid;
-  box-shadow:
+  border: clamp(0.3rem, 8vw - 2rem, 0.75rem) Honeydew solid;
+  /* box-shadow:
     15px 15px 0 -4px #324A5F,
-    15px 15px Honeydew;
+    15px 15px Honeydew; */
 }
 .Casa h1{
   color: Honeydew;
