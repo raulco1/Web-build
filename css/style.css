@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+}
+html{
+  height: 100%;
 }
 body{
   /* background: url(psBlueSky-vincent-gerbouin.jpg) no-repeat center center fixed; */
@@ -14,6 +18,7 @@ body{
   background-attachment: fixed;
   background-size: cover;
   /* position: fixed; */
+  height: 100%;
 }
 .container{
   background-color: #908070;
@@ -74,6 +79,7 @@ nav ul li a.active{
 #quine{
   position: fixed;
   display: flex;
+  height: 100%;
   line-height: 1.5;
   font-size: 2em;
   background: linear-gradient(225deg, black, transparent);
@@ -87,15 +93,28 @@ nav ul li a.active{
   top: -40%;
   white-space: pre;
   font-size: 1.2em;*/
+
 }
-#Casa{
-  position: absolute;
+.Outer_square{
+  position: relative;
+  margin: 0 auto;
+  height: calc(100vh - 42px);
+  /* height: clamp(77rem, 97vh); */
+  border: 4px solid red;
+  background-color: #707090;
+}
+.Casa{
+  position: relative;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 0 auto;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  height: 60%;
-  padding: 1em;
+  /* left: 50%; */
+  transform: translate(0, -50%);
+  /* top: 50%; */
+  width: 92%;
+  height: 93%;
   /* background-image: linear-gradient(to top right, #90c4db, #519cbb,#3e7594,#3b5e74); */
   background-color: #324A5F;
   border: 4px Honeydew solid;
@@ -103,12 +122,12 @@ nav ul li a.active{
     15px 15px 0 -4px #324A5F,
     15px 15px Honeydew;
 }
-#Casa h1{
+.Casa h1{
   color: Honeydew;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
 }
-#Casa p{
+.Casa p{
   color: #CCC9DC;
   padding: 0.5em;
   font-family: 'Space Grotesk', sans-serif;
@@ -122,6 +141,20 @@ nav ul li a.active{
 #m2{
   display: none;
 }
+.web-analytics{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  /* margin: 2em 0; */
+}
+.web-col{
+  flex-grow: 1;
+}
+
 @media only screen and (max-width:700px){
   nav ul{
     width: 100%;

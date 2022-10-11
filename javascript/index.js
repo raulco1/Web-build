@@ -5,18 +5,17 @@ document.getElementById("quine").innerHTML = document.documentElement.innerHTML.
 var menuList = document.getElementById("menuList");
 var feedback = document.getElementById("feedback");
 var minWidth = document.body.scrollWidth;
-feedback.innerHTML = minWidth;
+var minHeight = window.innerHeight;
+feedback.innerHTML = minWidth +"<br>" + minHeight;
 
 
-// var top = document.getElementsByTagName('nav ul');
+
 const elements = document.getElementsByClassName("menu-icon")[0];
 const cssObj = window.getComputedStyle(elements, null);
 
 let dis = cssObj.getPropertyValue("display");
-// document.getElementById("demo").innerHTML = dis;
-// if(dis == "block"){menuList.style.maxHeight = "0%"}
 
-menuList.style.maxHeight = "100%"
+menuList.style.maxHeight = "0%"
 function togglemenu() {
     if (menuList.style.maxHeight == "0%")
     {
