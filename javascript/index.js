@@ -67,23 +67,29 @@ function togglemenu() {
   //   }
   // }
 
-// //Website Counter
-// var counterContainer = document.querySelector(".website-counter");
-// var visitCount = localstorage.getitem("page_view");
-//
-// visitCount = 1;
-// localstorage.setItem("page_view",1)
-//
-// visitCount = Number(visitCount) + 1;
-// localstorage.setItem("page_view", visitCount);
-//
-// counterContainer.innerHTML = visitCount;
+//Website Counter
+var counterContainer = document.querySelector(".website-count");
+var visitCount = localstorage.getitem("page_view");
+
+visitCount = 1;
+localstorage.setItem("page_view",1)
+
+visitCount = Number(visitCount) + 1;
+localstorage.setItem("page_view", visitCount);
+
+counterContainer.innerHTML = visitCount;
 
 
+
+
+
+
+
+//
 // var counterContainer = document.querySelector(".website-counter");
 // var resetButton = document.querySelector("#reset");
 // var visitCount = localStorage.getItem("page_view");
-
+//
 // Check if page_view entry is present
 // if (visitCount) {
 //   visitCount = Number(visitCount) + 1;
