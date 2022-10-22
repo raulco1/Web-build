@@ -178,6 +178,44 @@ nav ul li a.active{
 
 }
 
+
+/* --------------------------- About Me ---------------------------  */
+.mainContent{
+
+}
+footer{
+  display: flex;
+  position: absolute;
+  /* height: 50vh; */
+  bottom: 0px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: grey;
+}
+footer img{
+  width: 25px;
+  color: red;
+  margin: 0.25em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.github-icon{
+  filter: invert(1%) sepia(6%) saturate(1641%) hue-rotate(314deg) brightness(99%) contrast(83%);
+}
+.linkedin-icon{
+  filter: invert(16%) sepia(99%) saturate(5171%) hue-rotate(201deg) brightness(98%) contrast(92%);
+}
+.instagram-icon{
+  filter: invert(38%) sepia(66%) saturate(1276%) hue-rotate(315deg) brightness(88%) contrast(103%);
+}
+.twitter-icon{
+  filter: invert(57%) sepia(43%) saturate(4376%) hue-rotate(175deg) brightness(98%) contrast(94%);
+}
+
+
+
 @media only screen and (max-width:700px){
   nav ul{
     width: 100%;
